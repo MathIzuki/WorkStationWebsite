@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Countdown Timer with Background and Spotify Playlist</title>
+	<link rel="stylesheet" href="style.css">
+	<script src="script.js"></script>
+</head>
+<body>
+	<div class="container">
+		<h1>Countdown Timer</h1>
+		<form action="timer.php" method="post">
+			<div>
+				<label for="minutes">Minutes:</label>
+				<input type="number" id="minutes" name="minutes" required>
+			</div>
+			<div>
+				<label for="seconds">Seconds:</label>
+				<input type="number" id="seconds" name="seconds" required>
+			</div>
+			<div>
+				<label for="bg">Background:</label>
+				<select id="bg" name="bg">
+					<option value="1">Background 1</option>
+					<option value="2">Background 2</option>
+					<option value="3">Background 3</option>
+					<option value="4">Background 4</option>
+				</select>
+			</div>
+			<div>
+				<label for="spotify">Spotify Playlist Link:</label>
+				<input type="text" id="spotify" name="spotify">
+			</div>
+			<button type="submit">Start Countdown</button>
+		</form>
+	</div>
+</body>
+</html>
